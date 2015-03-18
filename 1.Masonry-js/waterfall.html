@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<head>
+<style type="text/css">
+
+body {
+	margin: 0;
+	padding: 20px;
+	background-color: #C373E2;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.item {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 40px;
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 20px;
+	color: #FFF;
+	float: left;
+	background-color: #9432BA;
+	border: 2px solid #D29BE7;
+	border-radius: 5px;
+}
+
+.item    { width: 200px; }
+.item.w2 { width: 400px; }
+.item.w3 { width: 600px; }
+.item.w4 { width: 800px; }
+
+.item    { height:  60px; }
+.item.h2 { height: 120px; }
+.item.h3 { height: 180px; }
+.item.h4 { height: 240px; }
+
+@media screen and (max-width:900px){
+	.item{width: 100%!important;}
+}
+
+</style>
+</head>
+<body>
+
+<ul class="masonry js-masonry" data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" ,"gutter": 20 }'>
+	<li class="item"      >1</li>
+	<li class="item w2 h2">2</li>
+	<li class="item h3"   >3</li>
+	<li class="item h2"   >4</li>
+	<li class="item w3 h4">5</li>
+	<li class="item h4"   >6</li>
+	<li class="item"      >7</li>
+	<li class="item h2"   >8</li>
+	<li class="item w2 h3">9</li>
+	<li class="item h4"   >10</li>
+	<li class="item h2"   >11</li>
+	<li class="item h4"   >12</li>
+	<li class="item w2"   >13</li>
+	<li class="item"      >14</li>
+	<li class="item h2"   >15</li>
+	<li class="item"      >16</li>
+	<li class="item h3"   >17</li>
+</ul>
+<script type="text/javascript" src="masonry.pkgd.min.js"></script>
+</body>
+</html>
